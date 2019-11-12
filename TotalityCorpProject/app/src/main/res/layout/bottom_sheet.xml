@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/mainLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#BDBDBD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/circle_view"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardBackgroundColor="#BDBDBD"
+                    app:cardElevation="0dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#BDBDBD"
+                    app:cardElevation="0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/circle_view"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardBackgroundColor="#BDBDBD"
+                    app:cardElevation="0dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#BDBDBD"
+                    app:cardElevation="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/walletLayout"
+        layout="@layout/wallet_bal_layout"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/confirmLayout"
+        layout="@layout/confirm_layout"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:backgroundTint="#8064DD17"
+        android:background="@drawable/round_view"
+        android:text="NEXT"
+        android:textColor="#fff"/>
+
+</LinearLayout>

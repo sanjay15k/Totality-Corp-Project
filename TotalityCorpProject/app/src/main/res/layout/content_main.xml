@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingBottom="30dp"
+        tools:context=".CandyBustActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/round_view"
+                android:backgroundTint="#FFEB3B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CANDY\nBUST"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:lineHeight="30sp"
+                android:letterSpacing="0.08"
+                android:paddingStart="20dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cross_icon"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            android:lineHeight="20dp"
+            android:text="@string/lorem_ipsum"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="READ MORE"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#7CB342"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:layout_marginTop="30dp">
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="#ddd"/>
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="#ddd" />
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="#ddd"/>
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="#ddd"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/playButtonLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:backgroundTint="#42A5F5"
+                    android:background="@drawable/round_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLAY"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/downloadView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#64DD17"
+                    android:visibility="gone"
+                    android:background="@drawable/round_view"/>
+
+                <LinearLayout
+                    android:id="@+id/downloadLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="#8064DD17"
+                    android:background="@drawable/round_view">
+
+                    <TextView
+                        android:id="@+id/downloadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DOWNLOAD"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/downloadingTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20 MB / 30 MB"
+                        android:visibility="gone"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/sizeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30 MB"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/cancelImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#FFEB3B"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:padding="14dp"
+                android:background="@drawable/round_view"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
